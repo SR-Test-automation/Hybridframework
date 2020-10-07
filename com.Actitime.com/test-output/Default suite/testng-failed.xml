@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="scripts.AddingProductCart">
+      <class name="scripts.Whislist">
         <methods>
           <include name="openapp"/>
-          <include name="addingProductCart"/>
+          <include name="addingtoWhislist"/>
           <include name="afterclass"/>
           <include name="closeapp"/>
           <include name="beforeclass"/>
         </methods>
-      </class> <!-- scripts.AddingProductCart -->
+      </class> <!-- scripts.Whislist -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -10,11 +10,10 @@ public WebDriver driver;
 @FindBy(xpath="//a[@title='Printed Summer Dress']")
 private WebElement dress;
 
-@FindBy(id="selectProductSort")
+@FindBy(xpath="//select[@name='group_1']")
 private WebElement pricedd;
 
-@FindBy(xpath="(//a[.='Evening Dresses'])[2]")
-private WebElement eveningDress;
+
 
 @FindBy(id="layered_id_attribute_group_1")
 private WebElement sizecheckbox;
@@ -28,6 +27,12 @@ private WebElement stockcheckbox;
 
 @FindBy(xpath="//a[@title='Delivery']")
 private WebElement delivery;
+
+@FindBy(id="name")
+private WebElement nametb;
+
+@FindBy(id="submitWishlist")
+private WebElement savebtn;
 
 
 public WebElement getPricedd() {
@@ -44,6 +49,20 @@ public AddtoCartPage productselectd()
 {
 dress.click();
 return new AddtoCartPage(driver);
+}
+
+public void dressCatalog()
+{
+	sizecheckbox.click();
+	coloecheckbox.click();
+	stockcheckbox.click();
+	delivery.click();
+}
+
+public void savename()
+{
+	nametb.sendKeys("testing demo");
+	savebtn.click();
 }
 
 }

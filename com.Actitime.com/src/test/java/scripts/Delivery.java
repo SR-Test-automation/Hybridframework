@@ -12,20 +12,16 @@ import page1.HomePage;
 import page1.LoginPage;
 import page1.ProductPage;
 
-
-public class AddingProductCart extends BaseTest{
-	@Test
-	public void addingProductCart()
-	{
+public class Delivery  extends BaseTest{
+@Test
+public void productDelivery()
+{
+	
 		LoginPage l=new LoginPage(driver);
 		HomePage h = l.sigincreditials(Propertyfile.getdatapropertyfile("username"),Propertyfile.getdatapropertyfile("password"));
-		ProductPage p = h.serachingproduct(Propertyfile.getdatapropertyfile("productname"));
-		Utilies.dropdown(h.getProductsort(),Propertyfile.getdatapropertyfile("sortbydd"));
-		AddtoCartPage c = p.productselectd();
-		c.addbtn();
-		Utilies.dropdown(p.getPricedd(),Propertyfile.getdatapropertyfile("price"));
-		c.addingtocart();
-	
-	}
-
+		//Utilies.mousehover(driver,h.getDressesTab());
+		ProductPage p = h.eveningdress();
+		p.dressCatalog();
+		
+}
 }

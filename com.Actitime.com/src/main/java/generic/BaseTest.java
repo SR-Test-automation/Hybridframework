@@ -47,7 +47,7 @@ public class BaseTest implements AutoConstant {
 	driver=new ChromeDriver();
 	driver.get(Propertyfile.getdatapropertyfile("url"));
 	driver.manage().window().maximize();
-	driver.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);
+	driver.manage().timeouts().implicitlyWait(25,TimeUnit.SECONDS);
 	}
 	
 	@AfterMethod
@@ -64,14 +64,15 @@ public class BaseTest implements AutoConstant {
 		{
 			logger.fail("test case is failed");
 		}
+		driver.close();
 		
 	}
-	
-	@AfterSuite
-	public void afterclass()
-	{
-		driver.close();
-		report.flush();
-	}
+//	
+//	@AfterSuite
+//	public void afterclass()
+//	{
+//		driver.close();
+//		report.flush();
+//	}
 
 }
