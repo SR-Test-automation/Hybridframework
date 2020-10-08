@@ -3,9 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="scripts.Whislist"/>
-      <class name="scripts.AddingProductCart"/>
-      <class name="scripts.Delivery"/>
+      <class name="com.shoppingapp.producttest.AddingProductCart"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
