@@ -1,4 +1,4 @@
-package generic;
+package com.shoppingapp.genericlib;
 
 import com.aventstack.extentreports.ExtentReporter;
 import com.aventstack.extentreports.ExtentReports;

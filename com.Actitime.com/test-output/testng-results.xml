@@ -2,38 +2,63 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-10-07T12:24:34 IST" name="Default suite" finished-at="2020-10-07T12:25:17 IST" duration-ms="43191">
+  <suite started-at="2020-10-08T06:57:48 GMT" name="Default suite" finished-at="2020-10-08T06:58:12 GMT" duration-ms="24325">
     <groups>
     </groups>
-    <test started-at="2020-10-07T12:24:34 IST" name="Default test" finished-at="2020-10-07T12:25:17 IST" duration-ms="43191">
-      <class name="scripts.Whislist">
-        <test-method is-config="true" signature="beforeclass()[pri:0, instance:scripts.Whislist@55f616cf]" started-at="2020-10-07T12:24:34 IST" name="beforeclass" finished-at="2020-10-07T12:24:34 IST" duration-ms="445" status="PASS">
+    <test started-at="2020-10-08T06:57:48 GMT" name="Default test" finished-at="2020-10-08T06:58:12 GMT" duration-ms="24325">
+      <class name="scripts.AddingProductCart">
+        <test-method is-config="true" signature="beforeclass()[pri:0, instance:scripts.AddingProductCart@10d68fcd]" started-at="2020-10-08T06:57:48 GMT" name="beforeclass" finished-at="2020-10-08T06:57:48 GMT" duration-ms="370" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeclass -->
-        <test-method is-config="true" signature="openapp()[pri:0, instance:scripts.Whislist@55f616cf]" started-at="2020-10-07T12:24:34 IST" name="openapp" finished-at="2020-10-07T12:25:02 IST" duration-ms="27879" status="PASS">
+        <test-method is-config="true" signature="openapp()[pri:0, instance:scripts.AddingProductCart@10d68fcd]" started-at="2020-10-08T06:57:48 GMT" name="openapp" finished-at="2020-10-08T06:57:58 GMT" duration-ms="10299" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openapp -->
-        <test-method signature="addingtoWhislist()[pri:0, instance:scripts.Whislist@55f616cf]" started-at="2020-10-07T12:25:02 IST" name="addingtoWhislist" finished-at="2020-10-07T12:25:17 IST" duration-ms="15244" status="PASS">
+        <test-method signature="addingProductCart()[pri:0, instance:scripts.AddingProductCart@10d68fcd]" started-at="2020-10-08T06:57:58 GMT" name="addingProductCart" finished-at="2020-10-08T06:58:10 GMT" duration-ms="11849" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addingtoWhislist -->
-        <test-method is-config="true" signature="closeapp(org.testng.ITestResult)[pri:0, instance:scripts.Whislist@55f616cf]" started-at="2020-10-07T12:25:17 IST" name="closeapp" finished-at="2020-10-07T12:25:17 IST" duration-ms="5" status="FAIL">
+        </test-method> <!-- addingProductCart -->
+        <test-method is-config="true" signature="closeapp(org.testng.ITestResult)[pri:0, instance:scripts.AddingProductCart@10d68fcd]" started-at="2020-10-08T06:58:10 GMT" name="closeapp" finished-at="2020-10-08T06:58:12 GMT" duration-ms="2116" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addingtoWhislist status=SUCCESS method=Whislist.addingtoWhislist()[pri:0, instance:scripts.Whislist@55f616cf] output={null}]]]>
+                <![CDATA[[TestResult name=addingProductCart status=SUCCESS method=AddingProductCart.addingProductCart()[pri:0, instance:scripts.AddingProductCart@10d68fcd] output={null}]]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Cannot invoke "com.aventstack.extentreports.ExtentTest.pass(String)" because "this.logger" is null]]>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=85.0.4183.121)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'EC2AMAZ-29J4NP2', ip: '172.31.10.188', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49973}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: ea6d37e5ec8cedd52d9bede1839322f8]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.pass(String)" because "this.logger" is null
-at generic.BaseTest.closeapp(BaseTest.java:60)
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=85.0.4183.121)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'EC2AMAZ-29J4NP2', ip: '172.31.10.188', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49973}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: ea6d37e5ec8cedd52d9bede1839322f8
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
+at generic.BaseTest.closeapp(BaseTest.java:70)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -69,11 +94,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeapp -->
-      </class> <!-- scripts.Whislist -->
+      </class> <!-- scripts.AddingProductCart -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

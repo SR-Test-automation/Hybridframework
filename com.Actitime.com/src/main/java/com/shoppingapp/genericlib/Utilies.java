@@ -1,4 +1,4 @@
-package generic;
+package com.shoppingapp.genericlib;
 
 import java.awt.AWTException;
 import java.awt.Robot;

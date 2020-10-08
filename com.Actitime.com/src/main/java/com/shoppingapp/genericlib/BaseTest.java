@@ -1,9 +1,10 @@
-package generic;
+package com.shoppingapp.genericlib;
 
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -45,7 +46,9 @@ public class BaseTest implements AutoConstant {
 	{
 	System.setProperty(key1, value);
 	driver=new ChromeDriver();
-	driver.get(Propertyfile.getdatapropertyfile("url"));
+	//System.setProperty(key2, value2);
+	//driver=new FirefoxDriver();
+	driver.get("http://automationpractice.com/index.php");
 	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(25,TimeUnit.SECONDS);
 	}
@@ -53,7 +56,7 @@ public class BaseTest implements AutoConstant {
 	@AfterMethod
 	public void closeapp(ITestResult result)
 	{
-		int status = result.getStatus();
+	/*	int status = result.getStatus();
 		String tcname = result.getName();
 		if(result.getStatus()==ITestResult.SUCCESS)
 		{
@@ -63,7 +66,7 @@ public class BaseTest implements AutoConstant {
 		else if(result.getStatus()==ITestResult.FAILURE)
 		{
 			logger.fail("test case is failed");
-		}
+		}*/
 		driver.close();
 		
 	}

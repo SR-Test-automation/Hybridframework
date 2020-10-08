@@ -1,4 +1,4 @@
-package page1;
+package com.shoppingapp.pageslib;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

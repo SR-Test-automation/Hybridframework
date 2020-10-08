@@ -3,6 +3,18 @@
   <groupId>com.skillrary</groupId>
   <artifactId>com.shoppingapplication</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <release>14</release>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
   <dependencies>
   	<dependency>
   		<groupId>org.seleniumhq.selenium</groupId>

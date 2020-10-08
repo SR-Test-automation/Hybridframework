@@ -1,4 +1,4 @@
-package generic;
+package com.shoppingapp.genericlib;
 
 import java.io.File;
 import java.util.Date;

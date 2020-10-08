@@ -1,4 +1,4 @@
-package generic;
+package com.shoppingapp.genericlib;
 
 import java.io.FileInputStream;
 import java.util.Properties;
@@ -9,17 +9,18 @@ public class Propertyfile implements AutoConstant{
 	
 	public static String getdatapropertyfile(String keyvalue)
 	{
-		String s=null;
+		
 		Properties p=new Properties();
 		try {
 		p.load(new FileInputStream(propertyfilepath));
-		s=p.getProperty(keyvalue);
+	    p.getProperty(keyvalue);
 		}
 		catch(Exception e)
 		{
 			Reporter.log("data is not freteched",true);
 		}
-		return s;
+		return keyvalue;
+
 	
 		
 	}
